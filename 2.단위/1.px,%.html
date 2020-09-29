@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body * {
+            border: 2px solid;
+        }
+        .container {
+            width: 600px;
+        }
+        .parent {
+            /*width: 300px;*/
+            width: 50%; /* 부모요소 대비 */
+        }
+        .child {
+            /*width: 150px;*/
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">Container
+    <div class="parent">Parent
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+    </div>
+</div>
+</body>
+</html>

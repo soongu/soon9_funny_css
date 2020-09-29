@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        ul {
+            font-size: 30px;
+        }
+        ul li::before {
+            content: "숫자";
+            font-weight: bold;
+            color: red;
+            margin-right: 20px;
+        }
+
+        ul.box li::before {
+            content: ""; /* 이게 없으면 동작하지 않음! 비포애프터엔 컨텐트가 필수! */
+            width: 30px;
+            height: 30px;
+            background: tomato;
+            margin-right: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+
+<hr>
+
+<ul class="box">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>

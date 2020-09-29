@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+        body * {
+            border: 2px solid;
+        }
+        .container {
+            width: 60em; /* 폰트사이즈 대비 */
+            font-size: 10px;
+        }
+        .parent {
+            /*width: 300px;*/
+            /*width: 50%; !* 부모요소 대비 *!*/
+            width: 30em; /* 폰트사이즈는 상속으로 10px이 들어옴 */
+            font-size: 2em;
+        }
+        .child {
+            /*width: 150px;*/
+            /*width: 50%;*/
+            /*width: 15em;*/
+            width: 20rem; /* rem은 html의 폰트사이즈를 사용함 */
+        }
+    </style>
+</head>
+<body>
+<div class="container">Container
+    <div class="parent">Parent
+        <div class="child">Child1</div>
+        <div class="child">Child2</div>
+    </div>
+</div>
+</body>
+</html>

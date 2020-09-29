@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div .orange {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+<!--div 입장에서 li는 후손이고 li입장에서 ul은 부모, div는 조상임.-->
+<!--li들 서로는 형제라고 부름-->
+<div>
+    <ul>
+        <li>사과</li>
+        <li>딸기</li>
+        <li class="orange">오렌지</li>
+    </ul>
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오렌지</span>
+</div>
+</body>
+</html>

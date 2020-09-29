@@ -1,0 +1,44 @@
+<!--
+   # 상속되는 속성들
+   1. font관련
+   2. color
+   3. text-align, text-indent, text-decoration
+   4. letter-spacing
+   5. opacity
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .ecosystem {
+            color: red;
+        }
+
+        .parent {
+            position: absolute; /* 상속되지 않는 속성 */
+        }
+
+        .child {
+            position: inherit; /* 강제 상속 */
+        }
+    </style>
+</head>
+<body>
+    <div class="ecosystem">생태계
+        <div class="animal">동물
+            <div class="tiger">호랑이</div>
+            <div class="lion">사자</div>
+            <div class="elephant">코끼리</div>
+        </div>
+        <div class="plant">식물</div>
+    </div>
+
+<div class="parent">
+    <div class="child"></div>
+</div>
+</body>
+</html>

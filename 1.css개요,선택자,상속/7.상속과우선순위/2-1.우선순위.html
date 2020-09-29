@@ -1,0 +1,39 @@
+<!--
+ # 우선순위
+ 1. 명시도 점수가 높은 선언이 우선
+ 2. 점수가 같은 경우, 가장 마지막에 해석되는 선언이 우선
+ 3. 명시도는 '상속' 규칙보다 우선
+ 4. !important가 적용된 선언방식이 다른것보다 우선
+
+ # 명시도 점수
+ 1. 가장 중요(!important) : 무한대 점
+ 2. 인라인 선언방식: 1000점
+ 3. 아이디 선택자: 100점
+ 4. 클래스 선택자: 10점
+ 5. 태그 선택자: 1점
+ 6. 전체 선택자: 0점
+ 7. 상속: 점수계산 안함. 0점보다 낮음
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div { color: red !important; }
+        #color_yellow { color: yellow; }
+        .color_green { color: green; }
+
+        div { color: blue; }
+        * { color: darkblue; }
+        body { color: violet; }
+    </style>
+
+</head>
+<body>
+
+    <div id="color_yellow" class="color_green" style="color: orange;">Hello World!</div>
+</body>
+</html>
