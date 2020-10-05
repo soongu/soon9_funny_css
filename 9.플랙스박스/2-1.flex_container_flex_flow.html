@@ -1,0 +1,64 @@
+<!--
+    # Flex direction 속성
+    : Items의 주 축(main-axis)를 설정합니다.
+
+    1. row: Items를 수평축(왼쪽에서 오른쪽)으로 표시 ( 기본값 )
+    2. row-reverse: row의 반대 축으로 표시 (오른쪽에서 왼쪽)
+    3. column : Items를 수직축(위에서 아래로)으로 표시
+    4. column-reverse: column의 반대 축으로 표시
+
+
+    # 주축과 교차축
+    : flex-direction이 row면 수평축이 주축이며 수직축이 교차축이 됨!
+     , column일 경우 수직축이 주축이며 수평축이 교차축이 됨!
+
+     # 시작점과 끝점(flex-start와 flex-end)
+     : flex-direction이 row일 경우 왼쪽이 시작점이고 오른쪽이 끝점
+      , row-reverse일 경우 오른쪽이 시작점 왼쪽이 끝점
+      , column일 경우 위쪽이 시작점 아래쪽이 끝점
+      , column-reverse일 경우 아래쪽이 시작점 위쪽이 끝점
+
+
+     # flex-wrap
+     - Items의 여러 줄 바꿈을 설정.
+
+     1. nowrap : 모든 Items를 한 줄로 표시 ( 기본값 )
+     2. wrap : Items를 여러줄로 묶음.
+     3. wrap-reverse : wrap의 역방향으로 여러 줄로 묶음.
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container {
+            border: 4px solid;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+
+        .container .item {
+            width: 150px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+</div>
+
+</body>
+</html>

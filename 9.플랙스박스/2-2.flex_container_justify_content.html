@@ -1,0 +1,48 @@
+<!--
+    # justify-content
+    : 주 축의 정렬 방법을 설정.
+
+    1. flex-start : Items를 시작점으로 정렬.
+    2. flex-end : Items를 끝점으로 정렬
+    3. center : Items를 가운데로 정렬
+    4. space-between : 시작 Item은 시작점에, 마지막 Item은 끝점에 정렬되고
+     나머지는 사이에 고르게 정렬됨.
+    5. space-around : Items를 균등한 여백을 포함하여 정렬
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container {
+            border: 4px solid;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container .item {
+            width: 150px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+</div>
+
+</body>
+</html>

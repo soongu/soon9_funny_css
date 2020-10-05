@@ -1,0 +1,58 @@
+
+<!--
+    # flex-grow
+    : Item의 증가 너비 비율을 설정,
+      숫자가 크면 더 많은 너비를 가짐.
+      Item이 가변 너비가 아니거나(auto), 값이 0일 경우 효과가 없음.
+      기본값은 0
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container {
+            border: 4px solid;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .container .item {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1 {
+            flex-grow: 1;
+        }
+
+        .item2 {
+            flex-grow: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+</div>
+
+</body>
+</html>

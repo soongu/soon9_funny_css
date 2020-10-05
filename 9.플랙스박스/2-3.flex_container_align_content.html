@@ -1,0 +1,52 @@
+<!--
+    # align-content
+    : 교차 축의 정렬 방법을 설정. (2줄 이상, 한 줄일경우 aling-items를 사용할 것!)
+
+    1. stretch : Container의 교차축을 채우기 위해 Items를 늘림. (기본값)
+    2. flex-start : Items를 시작점으로 정렬
+    3. flex-end : Items를 끝점으로 정렬
+    4. center : Items를 가운데로 정렬
+    5. space-between : 시작 Item은 시작점에, 마지막 Item은 끝점에 정렬되고
+    나머지는 사이에 고르게 정렬됨.
+    6. space-around : Items를 균등한 여백을 포함하여 정렬
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container {
+            height: 400px;
+            border: 4px solid;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: flex-start;
+        }
+
+        .container .item {
+            width: 150px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+</div>
+
+</body>
+</html>

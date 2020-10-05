@@ -1,0 +1,52 @@
+<!--
+    # Flex Container 속성
+    1. display : Flex Container를 정의
+    2. flex-flow : flex-direction과 flex-wrap의 단축 속성
+    3. flex-direction : Flex items의 주 축(main-axis)를 설정
+    4. flex-wrap : Flex items의 여러 줄 바꿈 설정
+    5. justify-content : 주 축의 정렬 방법을 설정
+    6. align-content : 교차 축(cross-axis)의 정렬 방법을 설정(2줄 이상)
+    7. align-items : 교차 축에서 items의 정렬 방법을 설정(1줄)
+
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .container {
+            border: 2px solid red;
+            /*display: flex;*/
+            display: inline-flex;
+        }
+
+        .container .item {
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+</div>
+</body>
+</html>
