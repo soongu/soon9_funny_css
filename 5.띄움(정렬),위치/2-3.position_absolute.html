@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .grand-parent {
+            width: 400px;
+            height: 300px;
+            padding: 30px 100px 100px 30px;
+            border: 4px dashed lightgray;
+
+        }
+
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed gray;
+            position: relative;
+        }
+
+        .child {
+            width: 120px;
+            height: 80px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .absolute {
+            /*
+            absolute를 쓰려면 부모요소에 position: xxxx; 가 반드시 있어야
+            그 요소를 기준으로 움직이게 된다.
+             */
+            position: absolute;
+            bottom: 50px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="grand-parent">
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child absolute">2</div>
+        <div class="child">3</div>
+    </div>
+</div>
+</body>
+</html>

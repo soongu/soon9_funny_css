@@ -1,0 +1,78 @@
+<!--
+    # 요소 쌓임 순서
+    1. static을 제외한 position속성의 값이 있을 경우 가장 위에 쌓임.
+    2. position이 모두 존재한다면 z-index속성의 숫자 값이 높을 수록 위에 쌓임
+    3. position속성의 값이 있고,  z-index속성의 숫자 값이 같다면,
+      HTML의 마지막 코드일 수록 위에 쌓임(나중에 작성한 요소)
+
+      position > z-index > html마지막 코드
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box-group {
+            display: flex;
+        }
+
+        .box-group .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -30px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        }
+
+        .box-group .box:nth-child(2n) {
+            margin-top: 30px;
+        }
+
+        .box1 {
+
+        }
+
+        .box2 {
+            /*3번*/
+            position: relative;
+            z-index: 3;
+        }
+
+        .box3 {
+            position: relative;
+            z-index: 2;
+        }
+
+        .box4 {
+            /* 1번 */
+            position: relative;
+            z-index: 1;
+        }
+
+        .box5 {
+            /* 2번 */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box-group">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .relative {
+            /*
+            relative는 형제요소들에게 영향을 받거나 줌
+            이를테면 2번박스가 이동해도 3번의 위치는 변하지 않음
+            1번을 지우면 2번도 영향을 받아 이동됨!
+            */
+            position: relative;
+            /*top: 20px;*/
+            /*left: 50px;*/
+            right: 30px;
+            bottom: 40px;
+            left: 160px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">1</div>
+<div class="box relative">2</div>
+<div class="box">3</div>
+</body>
+</html>

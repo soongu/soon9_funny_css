@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        body {
+            height: 10000px;
+        }
+
+        .grand-parent {
+            width: 400px;
+            height: 300px;
+            padding: 30px 100px 100px 30px;
+            border: 4px dashed lightgray;
+        }
+
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed gray;
+        }
+
+        .child {
+            width: 120px;
+            height: 80px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .absolute {
+            position: fixed;
+            bottom: 50px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="grand-parent">
+    <div class="parent">
+        <div class="child">1</div>
+        <div class="child absolute">2</div>
+        <div class="child">3</div>
+    </div>
+</div>
+</body>
+</html>
