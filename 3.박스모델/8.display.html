@@ -1,0 +1,76 @@
+<!--
+ * display: 요소의 성격을 바꿔주는 속성입니다.
+ 1. block: 박스를 블록 요소로 바꿉니다.
+ 2. inline: 박스를 인라인 요소로 바꿉니다.
+ 3. inline-block: 박스를 인라인으로 두어 줄바꿈은 일어나지 않게 하면서
+   블록에 쓸 수 있는 속성을 쓸 수 있게합니다. (width, height, padding, text-align등)
+ 4. none: 박스를 보이지 않게 함.
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            display: block;
+        }
+
+        input {
+            display: inline-block;
+            width: 100px;
+            height: 20px;
+            margin: 50px 0;
+            padding: 20px 0;
+        }
+
+        input:nth-child(2) {
+            /*display: none;*/
+            opacity: 0;
+        }
+
+        div.box {
+            width: 200px;
+            height: 200px;
+            background: deepskyblue;
+        }
+
+        div.hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<span></span>
+<div>
+    <input type="text" value="1">
+    <input type="text" value="2">
+    <input type="text" value="3">
+    <input type="text" value="4">
+    <input type="text" value="5">
+</div>
+
+<button>클릭!</button>
+<div class="box"></div>
+
+<script>
+    const box = document.querySelector("div.box");
+    const btn = document.querySelector("button");
+
+    btn.addEventListener('click', function () {
+       if(box.classList.contains('hide')) {
+           box.classList.remove('hide');
+       } else {
+           box.classList.add('hide');
+       }
+    });
+</script>
+
+</body>
+</html>

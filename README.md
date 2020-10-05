@@ -6,9 +6,11 @@
 
 [마크다운 학습하기](./my-first-markdown.md)
 
+- reset.css cdn
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+```
 ## 헛소리 목록
 1. 칠리새우 맛있음. ㅋㅋ
 2. 하이네켄 좋은데 맛없어요
 
-### 2020.09.29
-1. css 기본 예제 저장중~~

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .parent {
+            width: 100px;
+            height: 300px;
+            border: 4px solid tomato;
+            margin: 20px;
+        }
+
+        .child {
+            /*width: 100%; 지워도 똑같음 */
+            max-width: 400px;
+            min-width: 200px;
+            height: 200px;
+            background: orange;
+        }
+    </style>
+
+</head>
+<body>
+<div class="parent">
+    <div class="child"></div>
+</div>
+</body>
+</html>

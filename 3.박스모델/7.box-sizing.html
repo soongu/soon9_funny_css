@@ -1,0 +1,30 @@
+<!--
+    # box-sizing
+    1. content-box : 너비만으로 요소의 크기를 계산 (기본값)
+    2. border-box : 너비에 패딩과 보더를 포함하여 크기를 계산
+-->
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+            padding: 40px;
+            border: 10px solid red;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

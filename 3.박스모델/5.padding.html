@@ -1,5 +1,12 @@
+
+<!--
+    # padding: 요소 안 여백
+    - 패딩을 쓰면 그만큼 박스크기가 변화한다!
+    ex) 가로세로 100px인 박스에 20px 전체패딩을 지정하면 가로세로가 140px이 됨
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,24 +14,17 @@
 
     <style>
         div {
-            /*width: 100%;== auto 기본값*/
-            /*height: auto; == 0 기본값*/
-            height: 100px;
-            background: tomato;
-        }
-
-        /*인라인 요소는 가로, 세로 사이즈를 가질 수 없습니다.*/
-        span {
             width: 100px;
             height: 100px;
             background: tomato;
+            padding: 20px;
+            /*box-sizing: border-box;*/
         }
     </style>
 </head>
 <body>
-
-<!--    <div></div>-->
-
-    <span>Text Text</span>
+<div>
+    Hello World!
+</div>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!--
+ * overflow: 박스 안의 내용이 박스보다 클 경우 넘치는 부분을 처리하는 속성입니다.
+ 1. visible: 전체를 다 보여줌 (기본값)
+ 2. hidden: 넘치는 컨텐츠를 숨김.
+ 3. auto: 넘치는 컨텐츠가 존재할 경우에만 스크롤바를 생성해 줌.
+ 4. scroll: 넘치는 컨텐츠가 없어도 스크롤바를 생성해줌.
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .parent {
+            width: 300px;
+            height: 250px;
+            border: 4px solid;
+            overflow: auto;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px solid red;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+</div>
+
+</body>
+</html>

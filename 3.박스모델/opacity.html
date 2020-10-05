@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        .parent {
+            width: 300px;
+            height: 250px;
+            background: cyan;
+        }
+
+        .child {
+            width: 150px;
+            height: 100px;
+            background: tomato;
+            font-size: 50px;
+
+            /* 100퍼센트에 가까울수록 불투명 0에 가까울수록 투명 */
+            opacity: 0.5; /* .5 , 50% */
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="child">123</div>
+</div>
+</body>
+</html>

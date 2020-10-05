@@ -1,0 +1,50 @@
+<!--
+ * border: 박스의 테두리를 말합니다.
+ - border-color: #00f; -> 테두리 색상을 파란색으로 지정.
+ - border-width: 2px; -> 테두리 굵기를 2px로 지정.
+ - border-style: solid; -> 테두리 모양을 실선으로 지정.
+ - border-top: 1px solid red; -> 위쪽 테두리만 1px짜리 빨간실선으로 지정.
+ - border-bottom, border-right, border-left
+
+ * border 스타일 일괄 지정
+ - ex) border: width style color
+
+ * 다양한 테두리 선의 style
+ - solid: 실선 모양.
+ - dashed: 긴 점선 모양.
+ - dotted: 점선 모양
+ - double: 이중 테두리 모양
+ - none:  테두리 없음
+ - groove, ridge, inset, outset: 액자 형태.
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        p { width :550px ; padding : 5px ; }
+        .p1{border:5px solid #123456;}
+        .p2{border:5px dotted #123456;}
+        .p3{border:5px dashed #123456;}
+        .p4{border:10px groove #06c;}
+        .p5{border:10px ridge #f06;}
+        .p6{border:10px inset #0c3;}
+        .p7{border:10px outset #c63;}
+        .p8{border:none;}
+    </style>
+</head>
+<body>
+<p class="p1">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+<p class="p2">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+<p class="p3">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+<p class="p4">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+<p class="p5">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+<p class="p6">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+<p class="p7">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+<p class="p8">파일을 편집하다 보면 문서를 검색하는 도중 프로젝트 도구가 브라우저 창에 뜬다. </p>
+</body>
+</html>
