@@ -1,9 +1,11 @@
 
 <!--
-    # flex-basis
-    : Item의  (공간 배분 전) 기본 너비를 설정.
-      값이 auto일 경우 width, height 등의 속성으로 Item의 너비 설정 가능
-      하지만 basis값이 주어질 경우 설정 불가.
+    # flex
+    : flex-grow, flex-shrink, flex-basis의 단축 속성
+
+    ex) flex: 증가너비 감소너비 기본너비;
+
+    # 주의사항: flex-basis는 원래 기본값이 auto이나 단축속성을 쓰면 기본값이 0이된다.
 -->
 
 
@@ -20,24 +22,17 @@
         }
 
         .container .item {
-
             height: 100px;
             background: tomato;
             border: 4px dashed red;
             border-radius: 10px;
-            flex-grow: 1;
-            flex-basis: 0;
+            flex: 1 100px;
         }
 
-        .item1 {
-
-        }
-
-        .item2 {
-
-        }
         .container .item3 {
-            flex-grow: 2;
+            /*flex : 1 1 20px; 증가너비  감소너비  기본너비*/
+            /*flex : 1 1; 증가너비 감소너비*/
+            /*flex : 1 20px; 증가너비 기본너비*/
         }
 
 
