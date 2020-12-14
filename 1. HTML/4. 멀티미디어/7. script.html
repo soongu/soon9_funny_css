@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="./js/pet.js"></script>
+    <script defer src="./js/pet.js"></script>
 </head>
 <body>
     <div id="my-pet">귀여운 거북이</div>
+    <button id="change-btn">변경</button>
+
+    <script>
+        const changeBtn = document.getElementById('change-btn');
+        const myPet = document.getElementById('my-pet');
+        changeBtn.addEventListener('click', function () {
+            myPet.innerText = "바보같은 거북이~";
+        });
+    </script>
 </body>
 </html>
