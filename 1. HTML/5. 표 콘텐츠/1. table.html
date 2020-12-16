@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        th {
+            background: lightgray;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="2" id="user-data">인적사항</th>
+        </tr>
+        <tr>
+            <th abbr="name" scope="col" headers="user-data">이름</th>
+            <th abbr="age" scope="col" headers="user-data">나이</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>30세</td>
+        </tr>
+        <tr>
+            <td>김철수</td>
+            <td>35세</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th rowspan="2" id="user-info">인적사항</th>
+            <th scope="row" headers="user-info">이름</th>
+            <td>홍길동</td>
+            <td>김철수</td>
+        </tr>
+        <tr>
+            <th scope="row" headers="user-info">나이</th>
+            <td>30세</td>
+            <td>35세</td>
+        </tr>
+    </table>
+
+</body>
+</html>
