@@ -64,11 +64,7 @@
     const btn = document.querySelector("button");
 
     btn.addEventListener('click', function () {
-       if(box.classList.contains('hide')) {
-           box.classList.remove('hide');
-       } else {
-           box.classList.add('hide');
-       }
+        box.classList.toggle('hide');
     });
 </script>
 

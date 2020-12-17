@@ -20,10 +20,18 @@
 
         .parent {
             position: absolute; /* 상속되지 않는 속성 */
+            width: 200px;
+            height: 200px;
+            background: gray;
         }
 
         .child {
-            position: inherit; /* 강제 상속 */
+            width: 100px;
+            height: 100px;
+            background: #000;
+            right: 10px;
+            bottom: 10px;
+            position: inherit;
         }
     </style>
 </head>
