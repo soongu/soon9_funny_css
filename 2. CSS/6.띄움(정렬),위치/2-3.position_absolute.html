@@ -10,6 +10,7 @@
             height: 300px;
             padding: 30px 100px 100px 30px;
             border: 4px dashed lightgray;
+            position: relative;
 
         }
 
@@ -17,7 +18,7 @@
             width: 400px;
             height: 300px;
             border: 4px dashed gray;
-            position: relative;
+            /* position: relative; */
         }
 
         .child {
@@ -34,8 +35,11 @@
 
         .absolute {
             /*
-            absolute를 쓰려면 부모요소에 position: xxxx; 가 반드시 있어야
-            그 요소를 기준으로 움직이게 된다.
+
+            - absolute를 쓰려면 조상요소에 position: xxxx; 가 반드시 있어야
+                그 요소를 기준으로 움직이게 된다. 
+            - 없다면 전체 뷰포트를 기준으로 움직인다.
+            
              */
             position: absolute;
             bottom: 50px;

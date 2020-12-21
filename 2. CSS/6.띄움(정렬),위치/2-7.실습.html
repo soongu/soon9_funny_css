@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            margin: 100px auto 0;
+        }
+
+        .container .box {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            border: 4px dashed red;
+            border-radius: 10px;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: -40px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            transition: 0.7s;
+            position: relative;
+        }
+
+        .container .box:hover {
+            position: relative;
+            bottom: 20px;
+            z-index: 10;
+            background: yellowgreen;
+            border-color: yellow;
+            cursor: pointer;
+            animation: boxup 1s;
+        }
+        @keyframes boxup {
+            0% {bottom: 0;}
+            30% {bottom: 0;}
+            100% {bottom: 20px;}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+</body>
+</html>
