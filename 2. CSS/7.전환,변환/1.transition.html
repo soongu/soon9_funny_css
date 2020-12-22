@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background: red;
+            /*
+            transition-property: width, background;
+            transition-duration: 1s;
+             */
+            /*transition: width 1s, background 1s;*/
+            /*transition: background 1s;*/
+            /*transition: all 1s;*/
+            /*transition: 1s;*/
+
+
+            /*transition: 2000ms;*/
+            /*transition-timing-function: ease-in;*/
+            /*transition: 2s linear;*/
+            transition: 2s steps(10);
+            transition-delay: 1s;
+        }
+        .box:hover {
+            width: 300px;
+            background: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -29,18 +29,11 @@
         }
 
         .container .box:hover {
-            position: relative;
-            bottom: 20px;
             z-index: 10;
             background: yellowgreen;
             border-color: yellow;
             cursor: pointer;
-            animation: boxup 1s;
-        }
-        @keyframes boxup {
-            0% {bottom: 0;}
-            30% {bottom: 0;}
-            100% {bottom: 20px;}
+            transform: translateY(-20px);
         }
     </style>
 </head>
