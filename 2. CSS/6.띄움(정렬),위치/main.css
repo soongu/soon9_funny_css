@@ -1,0 +1,178 @@
+
+/* reset */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* clearfix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* common */
+html {
+    font-size: 10px;
+}
+body {
+    font: 14px "NGothic", Arial, sans-serif;
+    background: #aaa;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* header */
+header {
+    text-align: center;
+    background: #fa0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 8rem;
+}
+header h1 span {
+    display: block;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+header p.stit {
+    background: #ccc;
+    color: #333;
+    padding: 5px;
+}
+/* container */
+#container {
+    overflow: hidden;
+}
+/* container side-menu */
+#container aside.side-menu {
+    float: left;
+    width: 25%;
+    font-weight: bold;
+}
+
+
+#container aside.side-menu .title {
+    font-size: 1.8rem;
+    color: #fff;
+    background: #900;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+#container aside.side-menu ul {
+    padding: 10px;
+}
+
+#container aside.side-menu ul li {
+    padding: 10px 5px;
+    text-decoration: underline;
+}
+#container aside.side-menu ul li a:hover {
+    border-bottom: 1px dashed;
+}
+
+/* container section.content */
+#container section.content {
+    float: left;
+    width: 50%;
+    background: #ddd;
+    color: #123456;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#container section.content article {
+    margin-bottom: 20px;
+}
+#container section.content article h2 {
+    background: #123456;
+    color: #ddd;
+    font-size: 1.7rem;
+    padding: 5px;
+}
+#container section.content article h2 a:hover {
+    text-decoration: underline;
+}
+
+#container section.content article h2 + h3 {
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+
+#container section.content article p {
+    text-indent: 2px;
+}
+
+/* container side-links */
+#container aside.side-links {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#container aside.side-links div {
+    margin-bottom: 40px;
+}
+
+#container aside.side-links div > span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#container aside.side-links div > span[class] {
+    font-size: 2.4rem;
+}
+
+#container aside.side-links div > span.all {
+    color: #999;
+}
+#container aside.side-links div > span.love {
+    color: #fa0;
+}
+
+#container aside.side-links .links li {
+    margin-bottom: 20px;
+}
+
+#container aside.side-links .links li > a {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+#container aside.side-links .links li > span {
+    display: block;
+}
+
+/* footer */
+footer {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 20px;
+    background: #123456;
+    color: #eee;
+}
+
+footer address a {
+    text-decoration: underline;
+}
+
+
+
+
+
+
