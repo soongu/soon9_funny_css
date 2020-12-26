@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+        }
+        .box:hover {
+            animation-name: first-animation;
+            /*animation-duration: 3s;*/
+            animation-duration: 3000ms;
+        }
+        @keyframes first-animation {
+            0% {
+                width: 100px;
+            }
+            75% {
+                width: 500px;
+            }
+            100% {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
