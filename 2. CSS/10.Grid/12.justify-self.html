@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            margin: 100px auto;
+            width: 400px;
+            height: 400px;
+            border: 5px solid;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+        .item:nth-child(1) {
+            background: orange;
+            justify-self: start;
+        }
+        .item:nth-child(2) {
+            background: orangered;
+            justify-self: end;
+        }
+        .item:nth-child(3) {
+            background: greenyellow;
+            justify-self: center;
+        }
+        .item:nth-child(4) {
+            background: skyblue;
+            justify-self: stretch;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+</div>
+</body>
+</html>

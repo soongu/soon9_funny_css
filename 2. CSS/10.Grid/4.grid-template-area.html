@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            margin: 100px;
+            width: 600px;
+            display: grid;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                "header header header"
+                "main main aside"
+                "footer footer footer"; /* ". footer footer" 넣어볼것! */
+
+            /*row-gap: 30px;*/
+            /*column-gap: 15px;*/
+            gap: 30px 15px;
+        }
+        .wrapper > * {
+            border: 10px solid red;
+        }
+
+        .wrapper header {
+            grid-area: header;
+        }
+        .wrapper section {
+            grid-area: main;
+        }
+        .wrapper aside {
+            grid-area: aside;
+        }
+        .wrapper footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <header>Header</header>
+    <section>Main</section>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</div>
+
+</body>
+</html>
